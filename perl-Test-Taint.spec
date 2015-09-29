@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Taint
 Version  : 1.06
-Release  : 5
+Release  : 6
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Summary  : 'Checks for taintedness of variables'
