@@ -4,12 +4,13 @@
 #
 Name     : perl-Test-Taint
 Version  : 1.06
-Release  : 8
+Release  : 9
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Summary  : 'Checks for taintedness of variables'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-Test-Taint-lib
 Requires: perl-Test-Taint-doc
 
 %description
@@ -21,6 +22,14 @@ Group: Documentation
 
 %description doc
 doc components for the perl-Test-Taint package.
+
+
+%package lib
+Summary: lib components for the perl-Test-Taint package.
+Group: Libraries
+
+%description lib
+lib components for the perl-Test-Taint package.
 
 
 %prep
@@ -38,7 +47,7 @@ fi
 %check
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=intel.com,localhost
+export no_proxy=localhost
 make TEST_VERBOSE=1 test
 
 %install
@@ -55,9 +64,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/x86_64-linux/Test/Taint.pm
-/usr/lib/perl5/site_perl/5.22.0/x86_64-linux/auto/Test/Taint/Taint.so
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Test/Taint.pm
 
 %files doc
 %defattr(-,root,root,-)
 %doc /usr/share/man/man3/*
+
+%files lib
+%defattr(-,root,root,-)
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/auto/Test/Taint/Taint.so
