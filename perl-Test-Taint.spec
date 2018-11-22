@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Taint
 Version  : 1.06
-Release  : 16
+Release  : 17
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Summary  : 'Checks for taintedness of variables'
@@ -71,7 +71,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/Test/Taint.pm
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/Test/Taint.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -79,4 +79,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/auto/Test/Taint/Taint.so
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/auto/Test/Taint/Taint.so
