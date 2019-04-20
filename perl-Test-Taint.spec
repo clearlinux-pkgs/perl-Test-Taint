@@ -4,10 +4,10 @@
 #
 Name     : perl-Test-Taint
 Version  : 1.06
-Release  : 24
+Release  : 25
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/Test-Taint-1.06.tar.gz
-Summary  : 'Checks for taintedness of variables'
+Summary  : Tools to test taintedness
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 Requires: perl-Test-Taint-lib = %{version}-%{release}
@@ -21,6 +21,7 @@ Summary: dev components for the perl-Test-Taint package.
 Group: Development
 Requires: perl-Test-Taint-lib = %{version}-%{release}
 Provides: perl-Test-Taint-devel = %{version}-%{release}
+Requires: perl-Test-Taint = %{version}-%{release}
 
 %description dev
 dev components for the perl-Test-Taint package.
