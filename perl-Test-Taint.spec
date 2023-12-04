@@ -5,7 +5,7 @@
 #
 Name     : perl-Test-Taint
 Version  : 1.08
-Release  : 44
+Release  : 45
 URL      : https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Taint-1.08.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Taint-1.08.tar.gz
 Summary  : 'Checks for taintedness of variables'
